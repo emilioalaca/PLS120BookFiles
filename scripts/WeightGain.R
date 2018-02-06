@@ -46,7 +46,7 @@ wg.lm <- lm(weightGain ~ intake, wg)
 
 summary(wg.lm)
 
-newdata=data.frame(intake = 1000)
+newdata = data.frame(intake = 1000)
 
 predict(wg.lm,newdata,se.fit = TRUE)
 

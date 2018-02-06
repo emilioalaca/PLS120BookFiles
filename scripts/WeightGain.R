@@ -1,9 +1,3 @@
-poil <- read.csv("../PLS120Fall2014/LabHW2014/parsley.txt", header = TRUE)
-poil$block <- factor(poil$block)
-anova(lm(yield ~ block + cultivar * stress, poil))
-anova(lm(yield ~ block, poil))
-
-
 wg <- as.data.frame(
   matrix(
     scan(
